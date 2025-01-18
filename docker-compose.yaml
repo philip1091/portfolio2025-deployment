@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  server:
+    image: philipdevdocker/server:v1.0.0
+    restart: always
+    ports:
+        - '80:80'
+    depends_on:
+      - frontend
+
+  frontend:
+    image: philipdevdocker/frontend:v1.0.0
+    restart: always
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
