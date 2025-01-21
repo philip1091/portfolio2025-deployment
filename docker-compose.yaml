@@ -9,7 +9,7 @@ services:
       - frontend
 
   frontend:
-    image: philipdevdocker/frontend:v1.0.1
+    image: philipdevdocker/frontend:v1.0.2
     restart: always
     ports:
       - '3000:3000'
