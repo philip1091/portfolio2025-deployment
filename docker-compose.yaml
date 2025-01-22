@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   server:
-    image: philipdevdocker/server:v1.0.1
+    image: philipdevdocker/server:v1.0.2
     restart: always
     ports:
         - '80:80'
