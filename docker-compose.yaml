@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   server:
-    image: philipdevdocker/server:v1.1.0
+    image: philipdevdocker/server:v1.0.9
     restart: always
     ports:
         - '443:443'
@@ -15,7 +15,7 @@ services:
       - SSL_KEY_FILE=/etc/ssl/private/privkey.pem
 
   frontend:
-    image: philipdevdocker/frontend:v1.0.2
+    image: philipdevdocker/frontend:v1.0.4
     restart: always
     ports:
       - '3000:3000'
