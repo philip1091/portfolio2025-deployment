@@ -1,5 +1,6 @@
 version: '3.8'
 services:
+  # server container version 1.0.9
   server:
     image: philipdevdocker/server:v1.0.9
     restart: always
@@ -13,7 +14,7 @@ services:
     environment:
       - SSL_CERT_FILE=/etc/ssl/private/fullchain.pem
       - SSL_KEY_FILE=/etc/ssl/private/privkey.pem
-
+# frontend container version 1.0.4
   frontend:
     image: philipdevdocker/frontend:v1.0.4
     restart: always
